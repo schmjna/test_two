@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="normalize" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
 	<title>test</title>
+	<script>
+	function startTime() {
+ 		var today = new Date();
+  		var h = today.getHours();
+  		var m = today.getMinutes();
+  		var s = today.getSeconds();
+
+  		if(h <= 9)
+            h = '0' + h;
+
+  		m = checkTime(m);
+  		s = checkTime(s);
+  		document.getElementById('time').innerHTML =
+  		h + ":" + m + ":" + s;
+  		var t = setTimeout(startTime, 500);
+	}
+
+	function checkTime(i) {
+  	if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  	return i;
+	}
+
+    function date() {
+        //Ab hier wird das Datum gebildet
+        var jetzt = new Date();
+        var tag = jetzt.getDate();
+        var monat = jetzt.getMonth() + 1;
+        if(monat <= 9)
+            monat = '0' + monat;
+        var jahr = jetzt.getYear();
+        if (jahr < 999)
+            jahr += 1900;
+        var tagZahl = jetzt.getDay();
+
+        wochentag = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag' ];
+        
+        //Hier werden die Einzelteile zusammengesetzt
+        var zeit = wochentag[tagZahl] + ', ' + tag + '.' + monat + '.' + jahr;    
+        
+        document.getElementById('date').innerHTML = zeit;
+    }
+
+        
+
+</script>
+
 </head>
-<body>
-	<h1>Test</h1>
-<div>Das ist ein Test</div>
+<body onload="startTime(); date()">
+	<div style="padding-top: 50px; text-align: center">
+		<div id="time" class="uhr"></div>
+		<div id="date" class="uhr"></div>
+		<div id="tag"></div>
+	</div>
+
+
+<div class="search-wrapper">
+
+	<form class="search" action="https://www.google.com/search" method="get">
+		<input class="search-input" type="text" placeholder="" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="1">
+<!--
+		<input type="submit" value="Search" class="is-hidden">
+-->
+	</form>
+<!--
+	<button class="search-clear search-clear button button-link" tabindex="1" disabled="">
+		<span class="icon-close"></span>
+	</button>
+-->
+
+</div>
+
+
+	
 </body>
 </html>
