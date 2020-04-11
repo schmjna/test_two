@@ -1,13 +1,16 @@
-html {
-	color: #2ffaf0;
-}
-
 body {
-	background: #292a2b;
+
+	--text_color: #2ffaf0;
+	--background_color: #292a2b;
+	--light_background: #38393b;
+
+	background: var(--background_color);
+	
 	font-family: 'Roboto Mono', serif;
 	font-weight: 500;
 	font-size: 16px;
 	
+	color: var(--text_color);
 }
 
 #time{
@@ -31,7 +34,7 @@ body {
 	border-radius: 4px;
 	border: none;
 
-	background: #38393b;
+	background: var(--light_background);
 
 	margin-top: 16px;
 	width: 100%;
@@ -39,20 +42,31 @@ body {
 
 	font-family: 'Roboto Mono', monospace;
 	text-align: center;
-	color: #2ffaf0;
+	color: var(--text_color);
 	
 }
 
-.tile {
-	display: inline-grid;
-
-	width: 200px;
-	height: 250px;
-
+.tilebox {
+	width: 80%;
 	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;	
+}
+
+.tile {
+
+	margin: 10px;
+
+	flex-grow: 1;
+	flex-basis: 200px;
+
+	height: 150px;
+
 	text-align: center;
 
-	border-width: 1px;
-	border: black;
-	border-style: solid;
+	border-radius: 10px;
+
+	background: var(--light_background);
 }
