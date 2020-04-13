@@ -239,6 +239,34 @@ body {
 	font-size: 60px;
 }
 
+.netflix {
+	width: 70px;
+}
+
+.spotify {
+	color: #1DB954;
+}
+
+.amazonmusic {
+	color: #0077c1;
+}
+
+.gmail {
+	width: 70px;
+}
+
+.keep {
+	color: #F4B400;
+}
+
+.maps {
+	color: #4285F4;
+}
+
+.outlook {
+	color: #00a2ed;
+}
+
 iframe {
 	
 }
