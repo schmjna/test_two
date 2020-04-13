@@ -3,10 +3,9 @@
 <head>
 	<link rel="normalize" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"> 
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"> 
-
-	<script>
+<script>
 	function startTime() {
  		var today = new Date();
   		var h = today.getHours();
@@ -48,50 +47,92 @@
         document.getElementById('date').innerHTML = zeit;
     }
 
-        
-
 </script>
+
+<script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
 
 </head>
 <body onload="startTime(); date()">
-	<div style="padding-top: 30px; text-align: center">
-		<div id="time" class="uhr"></div>
-		<div id="date" class="uhr"></div>
-		<div id="tag"></div>
-	</div>
+	<div class="wrapper">
+		<div id="row1" class="fixedflex">
+			<div style="padding-top: 30px; text-align: center">
+				<div id="time" class="uhr"></div>
+				<div id="date" class="uhr"></div>
+				<div id="tag"></div>
+			</div>
 
 
-<div class="search-wrapper">
-	<form class="search" action="https://www.google.com/search" method="get">
-		<input class="search-input" type="text" placeholder="" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="1">
-<!--
-		<input type="submit" value="Search" class="is-hidden">
--->
-	</form>
-<!--
-	<button class="search-clear search-clear button button-link" tabindex="1" disabled="">
-		<span class="icon-close"></span>
-	</button>
--->
-</div>
-
-<div class="tilebox">
-	<div class="tile"></div>
-	<div class="tile"></div>
-	<div class="tile">Test</div>
-	<a href="https://youtu.be/5qap5aO4i9A" class="link">
-	<div class="tile" style="justify-content: center; align-items: center">
-	
-			<img class="logo" src=assets/chilledcow_2.png alt='Chilled Cow Logo'>
+			<div class="search-wrapper">
+				<form class="search" action="https://www.google.com/search" method="get">
+					<input class="search-input" type="text" placeholder="" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="1">
+			<!--
+					<input type="submit" value="Search" class="is-hidden">
+			-->
+				</form>
+			<!--
+				<button class="search-clear search-clear button button-link" tabindex="1" disabled="">
+					<span class="icon-close"></span>
+				</button>
+			-->
+			</div>
 		</div>
-		</a>
 
-	<div class="tile">Test</div>
-	
-	<div class="tile"></div>
+		<div id="row2" class="flexflex">
+			<div class="tilebox">
+				<div class="tilecolumn">
+					<div class="tile"><span class="iconify" data-icon="noto:bird"></span></div>
+					<div class="tile"><span class="iconify" data-icon="logos:google-calendar" data-inline="false"></span></div>
+					<div class="tile">Test</div>
+					<a href="https://youtu.be/5qap5aO4i9A" class="tile">
+						<img class="logo" src=assets/chilledcow_2.png alt='Chilled Cow Logo'>
+					</a>
+					
+					<div class="tile"></div>
+					
+					<div class="tile">
+						<a href="https://youtu.be/5qap5aO4i9A" class="link"></a>
+					</div>
 
-	<div class="tile">Test</div>
-</div>
+					<div class="tile"><img class="logo" src=assets/chilledcow_2.png alt='Chilled Cow Logo'></div>
+
+					<div class="tile"><span class="iconify" data-icon="noto:bird"></span></div>
+
+				</div>
+
+				<div class="tilecolumn">
+					<div class="tile"></div>
+					<div class="tile"></div>
+					<div class="tile">Test</div>
+						<a href="https://youtu.be/5qap5aO4i9A" class="tile">
+								<img class="logo" src=assets/chilledcow_2.png alt='Chilled Cow Logo'>
+						</a>
+					
+					<div class="tile">Test</div>
+					
+					<div class="tile">
+						<a href="https://youtu.be/5qap5aO4i9A" class="link"></a>
+					</div>
+
+					<div class="tile"><img class="logo" src=assets/chilledcow_2.png alt='Chilled Cow Logo'></div>
+
+				</div>
+
+				<div class="tilecolumn">
+					<div class="tile"></div>
+					<div class="tile"></div>
+					<div class="tile">Test</div>
+						<a href="https://youtu.be/5qap5aO4i9A" class="tile">
+								<img class="logo" src=assets/chilledcow_2.png alt='Chilled Cow Logo'>
+						</a>
+					
+					<div class="tile">Test</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
 
 </body>
 </html>
