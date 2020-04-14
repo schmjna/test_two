@@ -3,11 +3,17 @@ html, body {
 }
 
 body {
+	--text_color: #584b42;
+	--background_color: #f9f3ec;
+	--light_background: #f77754;
 
-	--text_color: #0e0e10;
+
+	--text_color: #362e29;
 	--background_color: #f1f0ea;
-	--light_background: #f77a2a;
-	
+	--light_background: #f77754;
+
+
+
 	--transition-time: 0.2s;
 
 	--font-family: 'Josefin Sans', monospace;
@@ -206,13 +212,11 @@ body {
 	text-align: center;
 	
 	justify-content: center;
-
-	font-weight: 400;
+	vertical-align: middle;
 
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 4px;
-	border-color: black;
 
 	background: var(--light_background);
 /*
@@ -266,6 +270,25 @@ body {
 
 .iconify {
 	font-size: 60px;
+}
+
+.svg {
+	max-height: 70%;
+	max-width: 70%;
+}
+
+.text {
+	display: flex;
+
+	height: 70%;
+	width: 70%;
+
+	font-size: 56px;
+	font-family: 'Monoton', serif;
+	font-weight: 400;
+
+	justify-content: center;
+	align-items: center;
 }
 
 .netflix {
