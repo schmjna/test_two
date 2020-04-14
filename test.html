@@ -57,23 +57,31 @@
 <body onload="startTime(); date()">
 	<div class="wrapper">
 		<div id="row1" class="fixedflex">
-			<div style="padding-top: 30px; text-align: center">
-				<div id="time" class="uhr"></div>
-				<div id="date" class="uhr"></div>
-				<div id="tag"></div>
-			</div>
-
+			
+				<div style="padding-top: 30px; text-align: center">
+					<div id="time" class="uhr"></div>
+					<div id="date" class="uhr"></div>
+					<div id="tag"></div>
+				</div>
+			<div class="searchrow">
 				<form class="search" action="https://www.google.com/search" method="get">
 					<input class="search-input" type="text" placeholder="Google" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="1">
 			<!--
 					<input type="submit" value="Search" class="is-hidden">
 			-->
 				</form>
+
+				<div class="dist-search">
+				</div>
 			<!--
 				<button class="search-clear search-clear button button-link" tabindex="1" disabled="">
 					<span class="icon-close"></span>
 				</button>
 			-->
+				<form name="searchbox" class="search" action="/wiki/Special:Search" _lpchecked="1">
+					<input class="search-input" type="text" placeholder="Wikipedia" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="1">
+				</form>
+				</div>
 			
 		</div>
 
@@ -174,23 +182,19 @@
 						<img class="svg" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Sparkasse.svg">
 					</a>
 
-					<a href="" class="tile">
-						<img class="svg" src="">
-					</a>
-
-					<a href="" class="tile">
-						<img class="svg" src="">
+					<a href="https://www.deepl.com/translator" class="tile">
+						<img class="svg" src="https://raw.githubusercontent.com/schmjna/test_two/gh-pages/assets/deepl.png">
 					</a>
 
 				</div>
 
 				<div class="tilecolumn">
-					<a href="" class="tile">
+					<a href="https://web.whatsapp.com/" class="tile">
 						<img class="svg" src="https://cdn.worldvectorlogo.com/logos/whatsapp-symbol.svg">
 					</a>
 
-					<a href="" class="tile">
-						<img class="svg" src="">
+					<a href="https://www.instagram.com/" class="tile">
+						<img class="svg" src="https://cdn.worldvectorlogo.com/logos/instagram-2-1.svg">
 					</a>
 
 					<a href="" class="tile">
@@ -201,13 +205,6 @@
 						<img class="svg" src="">
 					</a>
 
-					<a href="" class="tile">
-						<img class="svg" src="">
-					</a>
-
-					<a href="" class="tile">
-						<img class="svg" src="">
-					</a>
 
 				</div>
 				
