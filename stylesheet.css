@@ -275,6 +275,8 @@ body {
 .svg {
 	max-height: 70%;
 	max-width: 70%;
+
+	opacity: 0.85;
 }
 
 .text {
@@ -292,7 +294,7 @@ body {
 }
 
 .netflix {
-	width: 70px;
+	height: 60px;
 }
 
 .spotify {
@@ -303,20 +305,13 @@ body {
 	color: #0077c1;
 }
 
-.gmail {
-	width: 70px;
-}
-
 .keep {
-	color: #F4B400;
+	height: 60%;
+	width: 60%;
 }
 
-.maps {
-	color: #4285F4;
-}
-
-.outlook {
-	color: #00a2ed;
+.ilias {
+	font-size: 32px;
 }
 
 iframe {
