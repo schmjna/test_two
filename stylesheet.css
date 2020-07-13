@@ -3,14 +3,15 @@ html, body {
 }
 
 body {
-	--text_color: #584b42;
+/*
+	--text_color: #362e29;
 	--background_color: #f9f3ec;
 	--light_background: #f77754;
+*/
 
-
-	--text_color: #362e29;
-	--background_color: #cfffe5;
-	--light_background: #f77754;
+	--text_color: #201e20;
+	--background_color: #e7e8d1;
+	--light_background: #b85042;
 
 
 
@@ -289,7 +290,7 @@ body {
 	max-height: 70%;
 	max-width: 70%;
 
-	opacity: 0.85;
+	/*opacity: 0.85;*/
 }
 
 .text {
